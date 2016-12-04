@@ -1,3 +1,82 @@
+@media (min-width: 800px) and (max-width: 1199px) {
+    .container, .copyright, .absposition{
+        width: 800px;
+    }
+    h1{
+        font-size: 50px;
+        padding-left: 80px;   
+        padding-top: 0;
+    }
+    header > img{
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    header > div > ul > li {
+        padding-left: 30px;
+    }
+    .sidebar{
+        width: 145px;
+    }
+    #client, #server{
+        padding-left: 150px;;
+    }
+    aside img{
+        width: 100px;
+        height: 120px;
+        margin-top: 40px;
+    }
+    .serv{
+        margin-top: 50px;
+    }
+    .reclame{
+        padding-top: 220px;
+        padding-left: 10px;
+        width: 130px;
+    }
+    footer > div{
+        padding-left: 50px;
+    }
+}
+@media (max-width: 799px) {
+    .container, .copyright, .absposition,.content, header > div, aside,
+    aside > ul{
+        width: 100%;
+    }
+    hr{
+        display: block;
+        border: 2px solid deepskyblue;
+    }
+    header, section, footer, .container{
+        flex-direction: column;
+    }
+    .sidebar, img{
+        display: none;
+    }
+    h1{
+        font-size: 34px;
+    }
+    h2, h3, #client, #server{
+        font-size: 30px;
+    }
+    h1, h2, h3, #client, #server, header > div > ul > li, ul,
+    footer > div > ul > li, footer > div, aside > ul > li{
+        margin: 10px 0 10px;
+        padding: 0;
+        text-align: center; 
+    }
+    header > div > ul > li{
+        display: block;
+    }
+    a{
+        font-size: 26px;
+        text-decoration: underline;
+    }
+    aside > ul > li{
+        border: none;
+    }
+}
 body{
     font-family: 'Philosopher', sans-serif;
     margin: 0;
@@ -165,84 +244,4 @@ aside img{
     width: 100%;
     height: 120px;
     transition: transform 1s;
-}
-@media (min-width: 800px) and (max-width: 1199px) {
-    .container, .copyright, .absposition{
-        width: 800px;
-    }
-    h1{
-        font-size: 50px;
-        padding-left: 80px;   
-        padding-top: 0;
-    }
-    header > img{
-        width: 150px;
-        height: 150px;
-        margin-top: 10px;
-        margin-left: 0;
-    }
-    header > div > ul > li {
-        padding-left: 30px;
-    }
-    .sidebar{
-        width: 145px;
-    }
-    #client, #server{
-        padding-left: 150px;;
-    }
-    aside img{
-        width: 100px;
-        height: 120px;
-        margin-top: 40px;
-    }
-    .serv{
-        margin-top: 50px;
-    }
-    .reclame{
-        padding-top: 220px;
-        padding-left: 10px;
-        width: 130px;
-    }
-    footer > div{
-        padding-left: 50px;
-    }
-}
-@media (min-width: 0) and (max-width: 799px) {
-    .container, .copyright, .absposition,.content, header > div, aside,
-    aside > ul{
-        width: 100%;
-    }
-    hr{
-        display: block;
-        border: 2px solid deepskyblue;
-    }
-    header, section, footer, .container{
-        flex-direction: column;
-    }
-    .sidebar, img{
-        display: none;
-    }
-    h1{
-        font-size: 34px;
-    }
-    h2, h3, #client, #server{
-        font-size: 30px;
-    }
-    h1, h2, h3, #client, #server, header > div > ul > li, ul,
-    footer > div > ul > li, footer > div, aside > ul > li{
-        margin: 10px 0 10px;
-        padding: 0;
-        text-align: center; 
-    }
-    header > div > ul > li{
-        display: block;
-    }
-    a{
-        font-size: 26px;
-        text-decoration: underline;
-    }
-    aside > ul > li{
-        border: none;
-    }
-    
 }
