@@ -1,0 +1,248 @@
+body{
+    font-family: 'Philosopher', sans-serif;
+    margin: 0;
+}
+header, section, footer, .container{
+    display: flex;
+}
+header, section, footer{
+    flex: 1 100%;
+    flex-wrap: wrap;
+}
+hr{
+    display: none;
+}
+h1, footer ul a{
+    color: deepskyblue;
+}
+a, .sidebar > h2, aside > ul a{
+     color: dodgerblue;
+}
+header > div > ul a, .absposition > h2, footer h3{
+    color: white;
+}
+section, .copyright{
+    background-color:ghostwhite;
+}
+footer, header, .absposition > h2{
+    background-color: dimgray;
+}
+.sidebar > ul > li, aside > ul > li{
+    border-left: 5px solid dodgerblue;
+    list-style: none;
+}
+p, .sidebar > ul > li, aside > ul > li{
+    padding: 10px;
+}
+.container, .copyright, .absposition{
+    width: 1200px;
+}
+h1, h2, h3{
+    padding-top: 20px;
+}
+h1{
+    font-size: 80px;
+    padding-left: 80px;   
+    padding-top: 0;
+}
+h2{
+    font-size: 36px;
+    text-align: center;   
+}
+h3{
+    font-size: 24px;
+    padding-left: 40px;
+}
+section{
+    padding-bottom: 30px;
+}
+header{
+    padding-top: 10px;
+    margin-top: 30px;
+}
+footer{
+    padding-bottom: 70px;
+}
+header > img{
+    width: 170px;
+    height: 170px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+header > div > ul a{
+    font-size: 30px;
+}
+.container{
+    margin: 0 auto;
+    flex-direction: column;
+}
+header > div{
+    width: 80%;
+}
+header > div > ul{
+    list-style: none;
+}
+header > div > ul > li {
+    padding-left: 12%;
+    display: inline-block;
+}
+.sidebar > h2{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.sidebar{
+    width: 20%;
+}
+.sidebar > ul{
+    padding-left: 30px;
+}
+.content{
+    width: 70%;
+}
+.sidebar{
+    width: 20%;
+}
+aside{
+     width: 10%; 
+}
+aside > ul{
+    padding: 0;
+    width: 110px;
+}
+footer > div{
+    flex-grow: 1;
+    padding-left: 10%;
+}
+.reclame{
+    padding-top: 190px;
+    padding-left: 30px;
+    width: 80%;
+}
+.copyright{
+    color:black;
+    font-size: 24px;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 5px;
+    padding: 10px 0;
+}
+.absposition{
+    position: absolute;
+    top: 5px;
+}
+.absposition > h2{
+    width: 200px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+footer ul{
+     list-style: none;
+}
+footer ul > li{
+    padding: 5px;
+}
+#client, #server{
+    text-align: left;
+    padding-left: 250px;;
+}
+@keyframes rotates{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+header > img:hover{
+    animation: rotates 1s;
+}
+aside img:hover{
+    transform: scale(2) translateX(-15px);
+}
+aside img{
+    padding: 70px 0 0;
+    width: 100%;
+    height: 120px;
+    transition: transform 1s;
+}
+@media (min-width: 800px) and (max-width: 1199px) {
+    .container, .copyright, .absposition{
+        width: 800px;
+    }
+    h1{
+        font-size: 50px;
+        padding-left: 80px;   
+        padding-top: 0;
+    }
+    header > img{
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    header > div > ul > li {
+        padding-left: 30px;
+    }
+    .sidebar{
+        width: 145px;
+    }
+    #client, #server{
+        padding-left: 150px;;
+    }
+    aside img{
+        width: 100px;
+        height: 120px;
+        margin-top: 40px;
+    }
+    .serv{
+        margin-top: 50px;
+    }
+    .reclame{
+        padding-top: 220px;
+        padding-left: 10px;
+        width: 130px;
+    }
+    footer > div{
+        padding-left: 50px;
+    }
+}
+@media (max-width: 799px) {
+    .container, .copyright, .absposition,.content, header > div, aside,
+    aside > ul{
+        width: 100%;
+    }
+    hr{
+        display: block;
+        border: 2px solid deepskyblue;
+    }
+    header, section, footer, .container{
+        flex-direction: column;
+    }
+    .sidebar, img{
+        display: none;
+    }
+    h1{
+        font-size: 34px;
+    }
+    h2, h3, #client, #server{
+        font-size: 30px;
+    }
+    h1, h2, h3, #client, #server, header > div > ul > li, ul,
+    footer > div > ul > li, footer > div, aside > ul > li{
+        margin: 10px 0 10px;
+        padding: 0;
+        text-align: center; 
+    }
+    header > div > ul > li{
+        display: block;
+    }
+    a{
+        font-size: 26px;
+        text-decoration: underline;
+    }
+    aside > ul > li{
+        border: none;
+    }
+    
+}
